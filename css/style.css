@@ -861,22 +861,28 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: ease-in-out .2s;
 }
 
+.schedule-item,
 #schedule .schedule-item {
-  border-bottom: 1px solid #cad4f6;
+  border-bottom: 1.75px solid #cad4f6;
   padding-top: 15px;
   padding-bottom: 15px;
   transition: background-color ease-in-out 0.3s;
 }
 
+.donatur .schedule-item:hover{
+  background-color: #f6f7fd;
+}
 #schedule .schedule-item:hover {
   background-color: #fff;
 }
 
+.schedule-item time,
 #schedule .schedule-item time {
   padding-bottom: 5px;
   display: inline-block;
 }
 
+.schedule-item .speaker,
 #schedule .schedule-item .speaker {
   width: 60px;
   height: 60px;
@@ -886,6 +892,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 10px 10px 0;
 }
 
+.schedule-item .speaker img,
 #schedule .schedule-item .speaker img {
   height: 100%;
   -webkit-transform: translateX(-50%);
@@ -894,12 +901,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all ease-in-out 0.3s;
 }
 
+.schedule-item h4,
 #schedule .schedule-item h4 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
+.donatur{
+  padding: 60px 0 60px 0;
+}
+
+.schedule-item h4 span,
 #schedule .schedule-item h4 span {
   font-style: italic;
   color: #19328e;
@@ -907,6 +920,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 16px;
 }
 
+.schedule-item p,
 #schedule .schedule-item p {
   font-style: italic;
   color: #152b79;
@@ -917,14 +931,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Venue Section
 --------------------------------------------------------------*/
 
-.donasi{
-  background: #d29e02;
-  border: 0;
-  padding: 10px 40px;
-  transition: 0.4s;
-  border-radius: 50px;
-  cursor: pointer;
-}
 
 #venue {
   padding: 60px 0;
@@ -1329,6 +1335,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
 }
 
+
+.donasi{
+  background: #d29e02;
+  border: 0;
+  padding: 10px 40px;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.donasi i.fa-whatsapp{
+  color: #ffff !important;
+  font-size: 20px !important;
+  margin: 5px !important;
+}
+
+
+
 #contact .contact-info i {
   font-size: 48px;
   display: inline-block;
@@ -1336,9 +1360,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #d29e02;
 }
 
+
 #contact .contact-info address,
 #contact .contact-info p {
   margin-bottom: 0;
+  color: #112363;
+}
+
+.donatur h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
   color: #112363;
 }
 
@@ -1569,6 +1601,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 13px;
   color: #ddd;
 }
+
 
 /*--------------------------------------------------------------
 # Responsive Media Queries
