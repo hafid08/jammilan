@@ -1149,22 +1149,22 @@
                         <!-- Schdule Day 1 -->
                         <div class="col-lg-9">
 
-                            <div class="row schedule-item">
+                            <div class="row schedule-item show">
                                 <div class="col-md-3 text-center"><p style="font-weight: bold;">Nominal</p></div>
                                 <div class="col-md-4 text-center"> <p style="font-weight: bold;">Nama</p></div>
                                 <div class="col-md-5 text-center"><p style="font-weight: bold;">Keterangan</p></div>
                             </div>
-                            <div class="row schedule-item">
+                            <div class="row schedule-item show">
                                 <div class="col-md-3 text-center"><p>Rp 300.000</p></div>
                                 <div class="col-md-4 text-center"> <p>Ny Mu***ah</p></div>
                                 <div class="col-md-5 text-center"><p>-</p></div>
                             </div>
-                            <div class="row schedule-item">
+                            <div class="row schedule-item show">
                                 <div class="col-md-3 text-center"><p>Rp 200.000</p></div>
                                 <div class="col-md-4 text-center"> <p>Ibu Ma***fah</p></div>
                                 <div class="col-md-5 text-center"><p>-</p></div>
                             </div>
-                            <div class="row schedule-item">
+                            <div class="row schedule-item show">
                                 <div class="col-md-3 text-center"><p>Rp 500.000</p></div>
                                 <div class="col-md-4 text-center"> <p>Ky Mu*****r</p></div>
                                 <div class="col-md-5 text-center"><p>-</p></div>
@@ -1233,6 +1233,9 @@
                         </div>
                         <!-- End Schdule Day 1 -->
                     </div>
+                    <div class="card-body"style="text-align: center;">
+                        <button class="show-all">Lihat Semua<i class="fa fa-chevron-down"></i></button>
+                    </div>
                 </div>
                 <!--<div class="form">
                   <div id="sendmessage">Your message has been sent. Thank you!</div>
@@ -1299,7 +1302,7 @@
             </div>
         </div>
     </footer><!-- #footer -->
-    <a type="button" href="#contact" class="donasi">Donasi Sekarang</a>
+    <a type="button" href="#contact" class="donasi-mobile">Donasi Sekarang</a>
     <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
     <!-- JavaScript Libraries -->
@@ -1320,17 +1323,16 @@
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function () {
-            $.getJSON("data-alumni.json", function (data) {
-                var items = [];
-                $.each(data, function (key, val) {
-                    items.push("<li id='" + key + "'>" + val + "</li>");
-                });
-
-                //$("<ul/>", {
-                //    "class": "my-new-list",
-                //    html: items.join("")
-                //}).appendTo("body");
-            });
+            //$.getJSON("data-alumni.json", function (data) {
+            //    var items = [];
+            //    $.each(data, function (key, val) {
+            //        items.push("<li id='" + key + "'>" + val + "</li>");
+            //    });
+            //});
+        });
+        $('.show-all').on('click', function(){
+            $(this).css({ display: "none" });
+            $('.donatur .justify-content-center').addClass('all');
         });
     </script>
 </body>

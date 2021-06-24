@@ -1,7 +1,7 @@
 /*
   General Styles --------------------------------------------------------------*/
   @media (max-width: 1023px) {
-    a.donasi{
+    a.donasi-mobile{
       position: fixed;
       background: #d29e02;
       height: 40px;
@@ -17,14 +17,51 @@
       margin-left: 8px;
       margin-top: 2px;
       margin-right: 50px;
-      font-size: 13px;
+      font-size: 13px;    
+      width: 315px;
     }  
   }
   @media (min-width: 1024px) {
-    a.donasi{
+    a.donasi-mobile{
       display: none;
     }
   }
+
+  a.donasi-mobile:hover, a.donasi-mobile:active, a.donasi-mobile:focus{
+    background: #d29e02;
+    color: #fff;
+  }
+
+button.show-all{
+  color: #fff;
+    background: #d29e02;
+    padding: 7px 22px;
+    border-radius: 50px;
+    border: 2px solid #d29e02;
+    transition: all ease-in-out 0.3s;
+    font-weight: 500;
+    margin-left: 8px;
+    margin-top: 2px;
+    line-height: 1;
+    font-size: 13px;
+}  
+
+button.show-all i{
+  padding-left: 10px;
+}
+
+.donatur .all .schedule-item{
+  display: flex;
+}
+
+.donatur .schedule-item{
+  display: none;
+}
+
+.donatur .schedule-item.show{
+  display: flex !important;
+}
+
 a.rab{
   font-size: 18px;
   display: inline-block;
