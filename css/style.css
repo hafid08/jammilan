@@ -1,6 +1,30 @@
 /*
   General Styles --------------------------------------------------------------*/
-
+  @media (max-width: 1023px) {
+    a.donasi{
+      position: fixed;
+      background: #d29e02;
+      height: 40px;
+      text-align: center;
+      right: 15px;
+      bottom: 15px;
+      color: #fff;
+      padding: 7px 22px;
+      border-radius: 50px;
+      border: 2px solid #d29e02;
+      transition: all ease-in-out 0.3s;
+      font-weight: 500;
+      margin-left: 8px;
+      margin-top: 2px;
+      margin-right: 50px;
+      font-size: 13px;
+    }  
+  }
+  @media (min-width: 1024px) {
+    a.donasi{
+      display: none;
+    }
+  }
 a.rab{
   font-size: 18px;
   display: inline-block;
